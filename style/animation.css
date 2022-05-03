@@ -1,0 +1,42 @@
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-in{
+    0% {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-menu-down{
+    100%{
+        width: 100vw;
+        height: 14rem;
+    }
+}
+
+@keyframes slide-menu-up{
+    100%{
+        width: 40px;
+    }
+}
+@keyframes fade-out{
+    0% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+}
+

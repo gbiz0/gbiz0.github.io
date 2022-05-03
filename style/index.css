@@ -1,0 +1,241 @@
+@import "./animation.css";
+@import "./mobile.css";
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    position: relative;
+    color: #333333;
+    overflow-x: hidden;
+}
+#menubt{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    font-size: 2rem;
+    right: 0.5rem;
+    top: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    cursor: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/fundo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main #page-landing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+main #page-landing #icon{
+    width: 98%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 13rem;
+}
+main #page-landing #icon i{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    transition: 0.2s;
+    opacity: 0.9;
+    color: #8257e6;
+}
+main #page-landing #icon i:hover{
+    color: #fff;
+    font-size: 2.8rem;
+    opacity: 1;
+}
+.menu{
+    height: 4rem;
+    background-color: #8257e6;
+    text-align: right;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.menu ul li{
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+.menu ul li a{
+    color: #ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.menu ul li a:hover{
+    color: #333333;
+
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 98%;
+}  
+#start h1{
+    color: #8257e6;
+    font-size: 4rem;
+    font-weight: 700;
+
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#subtitle{
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+#name{
+    color: #8257e6;
+
+}
+h2{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+    font-size: 33px;
+}
+h3{
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+h5{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+#about h3, p{
+    padding-left: 2rem;
+}
+#about{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    background-color: #333;
+}
+#about p{
+    line-height: 22px;
+    color: #fff;
+}
+#about a {
+    text-align: center;
+    text-decoration: none;
+    color: #8257e6;
+    text-transform: uppercase;   
+    
+}
+#about a:hover{
+    color: #fff;   
+}
+#about #laptop{
+    width: 17rem;
+    text-align: right;
+    right: 1vw;
+    left: auto;
+    position: absolute;
+    margin-top: 5rem;
+}
+#about #laptop i{
+    margin-right: 10rem;
+    color: #8257e6;
+    font-size: 10rem;
+    padding: 0.5rem;
+}
+@media (max-width: 1150px){
+    #about #laptop{
+        position: initial;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    #about #laptop i{
+        margin-right: 0;
+        margin-top: -5rem;
+        padding: 0;
+    }
+
+}
+
+#skills {
+    text-align: center;
+    background-color: #050505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#skills i{
+    font-size: 9rem;
+    padding: 1rem;
+    color: #8257e6;
+}
+#skills p{
+    color: #fff;
+}
+#contato{
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#contato a.nounderline:link {
+    text-decoration: none;
+
+}
+#contato i{
+    padding: 1rem;
+    color: #8257e6;
+    font-size: 3rem;
+    margin: 0px;
+}
+#contato p {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+
+}
+footer{
+    font-size: 15px;
+    color: #fff;
+    background-color: #050505;
+    text-align: center;
+    justify-content: center;
+}
+
