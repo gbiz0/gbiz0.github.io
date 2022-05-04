@@ -195,14 +195,16 @@ h5{
     background-color: #050505;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 #skills i{
     font-size: 9rem;
     padding: 1rem;
     color: #8257e6;
+
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #skills p{
     color: #fff;
