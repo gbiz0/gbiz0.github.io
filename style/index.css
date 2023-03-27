@@ -1,0 +1,43 @@
+body{
+    background-color: #080314;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.container{
+    margin-top: 3rem;
+}
+
+.pfp{
+    border-radius: 100%;
+    max-width: 180px;
+    border: 4px solid #8257e6;
+}
+
+p{
+    color: #bbc6ce;
+    font-size: 19px;
+}
+
+h1, h2, h3, h5{
+    color: #fff;
+}
+
+li{
+    color: #fff;
+}
+
+ins{
+    text-decoration: none;
+}
+
+footer{
+    color: #bbc6ce;
+    font-size: 20px;
+}
+
+i{
+    color: #8257e6;
+    font-size: 3rem;
+}
