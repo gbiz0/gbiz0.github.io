@@ -4,15 +4,15 @@ body{
     margin: 0;
     display: block;
 }
-
-.container{
-    margin-top: 3rem;
+#start{
+    margin-top: 4rem;
 }
 
 .pfp{
     border-radius: 100%;
-    max-width: 180px;
+    width: 180px;
     border: 4px solid #8257e6;
+    object-fit: cover;
 }
 
 p{
@@ -37,7 +37,32 @@ footer{
     font-size: 20px;
 }
 
+#icons{
+    font-size: 3rem;
+    text-align:center;
+    margin:auto;
+}
+
+#devicon{
+    font-size: 5rem;
+    margin:auto;
+    position: relative;
+    display: inline-block;
+}
+
+
 i{
     color: #8257e6;
-    font-size: 3rem;
 }
+
+#devicon i:hover{
+    color: #fff;
+    transition-duration: 0.5s;
+    font-size: 6rem;
+}
+
+#icons i:hover{
+    color: #442E78;
+    transition-duration: 0.1s;
+}
+
