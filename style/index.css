@@ -73,4 +73,22 @@ i{
     .align-profile {
       display: none
     }
-}   
+}
+
+#fade-in{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-in{
+    0% {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
