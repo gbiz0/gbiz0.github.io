@@ -69,3 +69,8 @@ i{
     transition-duration: 0.1s;
 }
 
+@media only screen and (max-width: 992px) {
+    .align-profile {
+      display: none
+    }
+}   
