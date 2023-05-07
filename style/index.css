@@ -71,7 +71,10 @@ i{
 
 @media only screen and (max-width: 992px) {
     .align-profile {
-      display: none
+        display: none
+    }
+    .pisca{
+        display: none
     }
 }
 
