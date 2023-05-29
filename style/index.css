@@ -27,6 +27,10 @@ h1, h2, h3, h5{
     color: #fff;
 }
 
+ins{
+    pointer-events: none;
+}
+
 li{
     color: #fff;
 }
@@ -60,8 +64,7 @@ i{
 
 #devicon i:hover{
     color: #fff;
-    transition-duration: 0.5s;
-    font-size: 6rem;
+    transition-duration: 0.2s;
 }
 
 #icons i:hover{
@@ -71,9 +74,6 @@ i{
 
 @media only screen and (max-width: 992px) {
     .align-profile {
-        display: none
-    }
-    .pisca{
         display: none
     }
 }
