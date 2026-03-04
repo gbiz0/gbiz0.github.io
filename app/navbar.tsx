@@ -5,11 +5,17 @@ import { Sun, Moon, Languages } from 'lucide-react'
 import { useLanguage } from './providers'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme()
   const { lang, setLang, t } = useLanguage()
   const pathname = usePathname()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const isActive = (path: string) => pathname === path
 
@@ -43,7 +49,7 @@ export default function Navbar() {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           title="Toggle Theme"
         >
-          {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+          {mounted ? (theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />) : <div style={{ width: 14, height: 14 }} />}
         </button>
 
         <button 

@@ -35,7 +35,7 @@ export default function Home() {
           <div className="fade-up" style={{ animationDelay: '0.2s' }}>
             <p className="section-label">{t('contact')}</p>
             <div className="contact-row">
-              <a className="contact-link" href="https://www.linkedin.com/in/gustavo-bizo-jardim-0b082319a/" target="_blank" rel="noopener noreferrer">
+              <a className="contact-link" href="https://www.linkedin.com/in/gustavo-bizo/" target="_blank" rel="noopener noreferrer">
                 linkedin
               </a>
               <a className="contact-link" href="https://github.com/gbiz0" target="_blank" rel="noopener noreferrer">
