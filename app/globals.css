@@ -35,6 +35,7 @@ html, body {
   line-height: 1.6;
   min-height: 100vh;
   transition: background 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
 }
 
 nav {
@@ -46,12 +47,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
   font-size: 15px;
   color: var(--muted);
   letter-spacing: 0.05em;
+  flex-shrink: 0;
 }
 
 .logo span {
@@ -85,6 +88,13 @@ nav {
 .nav-btn.active {
   color: var(--accent);
   font-weight: 500;
+}
+
+.nav-separator {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  margin: 0 8px;
 }
 
 .control-btn {
@@ -554,7 +564,26 @@ footer small {
 }
 
 @media (max-width: 480px) {
-  nav { padding: 16px 20px; }
+  nav { 
+    padding: 16px 12px;
+  }
+  .nav-links {
+    gap: 4px;
+  }
+  .nav-btn {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  .nav-separator {
+    margin: 0 4px;
+  }
+  .control-btn {
+    padding: 6px 4px;
+  }
+  .logo {
+    font-size: 13px;
+  }
+  
   main { padding: 0 20px; }
   .about-header { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 32px; }
   .pfp-placeholder { width: 64px; height: 64px; font-size: 20px; }
@@ -562,4 +591,17 @@ footer small {
   .section-label { margin-bottom: 16px; }
   .post-item { flex-direction: column; gap: 4px; align-items: flex-start; padding: 16px 20px; }
   .post-detail-meta { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@media (max-width: 360px) {
+  nav {
+    padding: 12px 8px;
+  }
+  .logo {
+    display: none; /* Hide logo on very small screens to save space for nav links */
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
 }

@@ -42,7 +42,7 @@ export default function Navbar() {
           {t('blog')}
         </Link>
         
-        <div style={{ width: '1px', height: '16px', background: 'var(--border)', margin: '0 8px' }} />
+        <div className="nav-separator" />
 
         <button 
           className="control-btn"
