@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import Navbar from '../navbar'
 import { useLanguage } from '../providers'
 
@@ -21,10 +22,10 @@ export default function About() {
 
     const sortedNames = Object.keys(links).sort((a, b) => b.length - a.length)
 
-    let parts: (string | JSX.Element)[] = [text]
+    let parts: (string | React.ReactNode)[] = [text]
 
     sortedNames.forEach((name) => {
-      const newParts: (string | JSX.Element)[] = []
+      const newParts: (string | React.ReactNode)[] = []
       parts.forEach((part, i) => {
         if (typeof part === 'string') {
           const subParts = part.split(new RegExp(`(${name})`, 'gi'))
